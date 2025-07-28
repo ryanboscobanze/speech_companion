@@ -1,0 +1,27 @@
+name: Test macOS Setup Script with Python 3.9.13
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: ⬇️ Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python 3.9.13
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9.13'
+
+      - name: 🔧 Run setup.py (create venv, install deps)
+        run: python setup.py
+
+      - name: 🚀 Run app inside virtual environment
+        run: |
+          source sound_smart_env/bin/activate
+          python execution_app.py
