@@ -24,4 +24,4 @@ jobs:
       - name: 🚀 Run app inside virtual environment
         run: |
           source sound_smart_env/bin/activate
-          python execution_app.py
+          python src/main.py
