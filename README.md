@@ -39,6 +39,8 @@ Audience / Use Cases
 - UX researchers testing speech flow
 - Teachers or students building NLP demos
 
+## python --version: 3.9.13
+
 ```
 python setup.py # this will create an environment with all libraries
 ```
