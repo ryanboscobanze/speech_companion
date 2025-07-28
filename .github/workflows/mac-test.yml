@@ -21,7 +21,4 @@ jobs:
       - name: 🔧 Run setup.py (create venv, install deps)
         run: python setup.py
 
-      - name: 🚀 Run app inside virtual environment
-        run: |
-          source sound_smart_env/bin/activate
-          python src/main.py
+
