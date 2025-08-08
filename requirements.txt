@@ -1,15 +1,9 @@
-langgraph
-langchain
 openai
-
 wikipedia
 duckduckgo-search
 ddgs
 tavily-python
 requests
-
-sentence-transformers
-
 faster-whisper
 sounddevice
 numpy==1.23.5
