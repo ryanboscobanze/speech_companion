@@ -17,7 +17,7 @@ if not sys.version.startswith("3.9"):
 
 try:
     import tkinter
-    if tkinter.TkVersion < 8.6:
+    if tkinter.TkVersion <= 8.6:
         print(f"❌ Tkinter version must be ≥ 8.6. Found: {tkinter.TkVersion}")
         print("👉 Tip: Use Python.org installer (NOT Homebrew) to get correct Tk version on Mac.")
         sys.exit(1)

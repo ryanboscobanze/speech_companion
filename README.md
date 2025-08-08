@@ -40,6 +40,7 @@ Audience / Use Cases
 - Teachers or students building NLP demos
 
 ## python --version: 3.9.13
+## tkinter.TkVersion <= 8.6
 
 ```
 python setup.py # this will create an environment with all libraries
@@ -183,22 +184,22 @@ Extracts:
 
     🧠 1. transcribe_with_whisper(audio_path)
     
-      Purpose: Transcribes an audio file using the lightweight faster-whisper model locally.
+        Purpose: Transcribes an audio file using the lightweight faster-whisper model locally.
 
-      🔧 Key Behavior:
-      - Loads WhisperModel("tiny") once at import time or any faster variant in the whisper family of models contingent of infrastructure availability, intentionally chosen the smallest size for demo.
-      - Transcribes segments and joins them into one clean string
-      - Runs fully offline (after initial model download)
+        🔧 Key Behavior:
+        - Loads WhisperModel("tiny") once at import time or any faster variant in the whisper family of models contingent of infrastructure availability, intentionally chosen the smallest size for demo.
+        - Transcribes segments and joins them into one clean string
+        - Runs fully offline (after initial model download)
 
-  ☁️ 2. transcribe_with_assemblyai(audio_path)
+    ☁️ 2. transcribe_with_assemblyai(audio_path)
 
-      Purpose: Transcribes audio using AssemblyAI, a cloud-based API service.
+        Purpose: Transcribes audio using AssemblyAI, a cloud-based API service.
 
-      🔁 Key Steps:
-      - Uploads audio to AssemblyAI via /upload
-      - Creates a transcript job via /transcript
-      - Polls the /transcript/{id} endpoint until complete
-      - Returns the full transcription string
+        🔁 Key Steps:
+        - Uploads audio to AssemblyAI via /upload
+        - Creates a transcript job via /transcript
+        - Polls the /transcript/{id} endpoint until complete
+        - Returns the full transcription string
 
 📂 text_utils.py — NLP Features & Language Intelligence
 
@@ -307,7 +308,7 @@ Extracts:
 
 📂 app_state.py — Global State Management
     
-    This file defines all the mutable global objects used across your app, including:
+    This file defines all the mutable global objects used across the app, including:
 
     - 🎙️ Recording state
     - 🧵 Thread control signals
