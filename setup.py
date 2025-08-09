@@ -60,6 +60,6 @@ activate_command = (
 
 print("\nSetup complete!")
 print(f"To activate your environment, run:\n    {activate_command}")
-print("Then launch the app with:\n    python execution_app.py")
+print("Then launch the app with:\n    python src/main.py")
 
 
