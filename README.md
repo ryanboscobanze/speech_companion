@@ -356,3 +356,8 @@ Extracts:
     🔁 6. App Loop
     - Keeps the GUI alive and responsive
     - Handles all events and UI updates in a single-threaded loop
+
+
+☕ Support My Work
+You can Buy Me a Coffee to support more free AI tutorials and tools. 
+https://buymeacoffee.com/algoforgeau
